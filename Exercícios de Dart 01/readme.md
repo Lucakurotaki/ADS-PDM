@@ -125,9 +125,74 @@ void main(){
 ## 4.
 
 ```dart
-
+void main(){
+  double salAtual = 3000.5;
+  
+  double salUm = salAtual + (salAtual*0.07);
+  
+  double salDois = salUm + (salUm*0.06);
+  
+  double salTres = salDois + (salDois*0.05);
+  
+  String lista = """
+  Salário Atual: $salAtual
+  Um ano depois: $salUm
+  Dois anos depois: $salDois
+  Três anos depois: $salTres
+  """;
+  
+  print(lista);
+}
 ```
 
+## 5.
+<p>12</p>
+
+## 6.
 
 ```dart
+void main(){
+  double grade1 = 7.5;
+  double grade2 = 4.2;
+  double grade3 = 8;
+  
+  double finalGrade = (grade1+grade2+grade3)/3;
+  
+  String situation = '';
+  
+  if(finalGrade < 4){
+    situation = 'Reprovado.';
+  }else if(finalGrade < 7){
+    situation = 'Exame final.';
+  }else{
+    situation = 'Aprovado.';
+  }
+  
+  print("Média: $finalGrade. Situação: $situation");
+}
+```
+
+## 7.
+
+```dart
+void main(){
+  int limite = 10;
+  
+  String ponto = '';
+  
+  for(int i = 1; i<=limite; i++){
+    ponto += '.';
+    print('$ponto$i');
+  }
+}
+```
+
+## 8.
+
+```dart
+void main(){
+  var sequencia = [3,12,1,88,15,64];
+  
+  sequencia.forEach((item) => print(item*2));
+}
 ```
