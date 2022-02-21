@@ -196,3 +196,7 @@ void main(){
   sequencia.forEach((item) => print(item*2));
 }
 ```
+
+## 9.
+<p>Link do vídeo:</p>
+<p>https://drive.google.com/file/d/1bshZ38Xzi0fHXbsNmYXKtDZe1Ohd6c62/view?usp=sharing</p>
