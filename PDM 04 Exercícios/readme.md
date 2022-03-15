@@ -13,4 +13,4 @@
 <p>Arquivo "mi_cardNovoMain.dart"</p>
 
 ## Link do vídeo:
-<p>https://drive.google.com/file/d/1lE3iozw8s7p5P76dsrSUTSXez9B9fdRW/view?usp=sharing</p>
+<p>https://drive.google.com/file/d/11tRFRz8BzmaoByT2av9wZRIwDKlb5wN4/view?usp=sharing</p>
