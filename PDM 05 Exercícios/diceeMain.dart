@@ -23,14 +23,9 @@ class _DicePageState extends State<DicePage> {
   int leftDiceNumber = 1;
   int rightDiceNumber = 1;
 
-  void changeLeftDiceFace(){
-    setState((){
-      leftDiceNumber = Random().nextInt(6) + 1;
-    });
-  }
-
-  void changeRightDiceFace(){
+  void changeDiceFace(){
     setState(() {
+      leftDiceNumber = Random().nextInt(6) +1;
       rightDiceNumber = Random().nextInt(6) + 1;
     });
   }
@@ -44,7 +39,7 @@ class _DicePageState extends State<DicePage> {
             child: TextButton(
               child: Image.asset('images/dice$leftDiceNumber.png'),
               onPressed: (){
-                changeLeftDiceFace();
+                changeDiceFace();
               },
             ),
           ),
@@ -52,7 +47,7 @@ class _DicePageState extends State<DicePage> {
             child: TextButton(
               child: Image.asset('images/dice$rightDiceNumber.png'),
               onPressed: (){
-                changeRightDiceFace();
+                changeDiceFace();
               },
             ),
           ),
