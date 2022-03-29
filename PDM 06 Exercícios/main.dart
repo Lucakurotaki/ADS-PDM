@@ -34,6 +34,8 @@ class Quizpage extends StatefulWidget {
 
 class _QuizpageState extends State<Quizpage> {
   List<Icon> scoreKeeper = [];
+  
+  static int score = 0;
 
   void checkAnswer(String userPickedAnswer){
     String correctAnswer = quizBrain.getCorrectAnswer();
@@ -42,8 +44,12 @@ class _QuizpageState extends State<Quizpage> {
       if(quizBrain.isFinished() == false){
         if(userPickedAnswer == correctAnswer){
           scoreKeeper.add(const Icon(Icons.check, color: Colors.green,));
+          score += 3;
         }else if(userPickedAnswer == 'maybe'){
           scoreKeeper.add(const Icon(Icons.question_mark, color: Colors.blue,));
+          if(correctAnswer == 'true'){
+            score++;
+          }
         }else{
           scoreKeeper.add(const Icon(Icons.close, color: Colors.red,));
         }
@@ -52,6 +58,8 @@ class _QuizpageState extends State<Quizpage> {
         quizBrain.reset();
 
         scoreKeeper = [];
+
+        score = 0;
       }
     });
   }
@@ -133,7 +141,7 @@ class _QuizpageState extends State<Quizpage> {
                 backgroundColor: Colors.blue,
               ),
               child: const Text(
-                'False',
+                'Maybe',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20.0,
@@ -147,9 +155,17 @@ class _QuizpageState extends State<Quizpage> {
             ),
           ),
         ),
-        
+
         Row(
-          children: scoreKeeper,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Row(
+              children: scoreKeeper,
+            ),
+            Text(
+              'Score: $score p.'
+            ),
+          ]
         ),
       ],
     );
