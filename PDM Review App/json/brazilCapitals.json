@@ -1,0 +1,138 @@
+{
+    "capitals": [
+        {
+            "name" : "Rio Branco",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Maceio",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Macapa",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Manaus",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Salvador",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Fortaleza",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Brasilia",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Vitoria",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Goiania",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Sao Luis",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Cuiaba",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Campo Grande",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Belo Horizonte",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Belem",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Joao Pessoa",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Curitiba",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Recife",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Teresina",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Rio de Janeiro",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Natal",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Porto Alegre",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Porto Velho",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Boa Vista",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Florianopolis",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Sao Paulo",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Aracaju",
+            "favorite" : false
+        },
+
+        {
+            "name" : "Palmas",
+            "favorite" : false
+        }
+    ]
+}
