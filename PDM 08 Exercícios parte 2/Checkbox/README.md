@@ -1,4 +1,4 @@
-# checkbox
+# Checkbox
 
 A new Flutter project.
 
