@@ -1,4 +1,4 @@
-# togglebuttons
+# Toggle Buttons
 
 A new Flutter project.
 
