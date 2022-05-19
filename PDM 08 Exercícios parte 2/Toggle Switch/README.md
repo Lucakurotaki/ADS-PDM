@@ -1,4 +1,4 @@
-# toggleswitch
+# Toggle Switch
 
 A new Flutter project.
 
