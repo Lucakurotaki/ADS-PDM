@@ -1,4 +1,4 @@
-# slider
+# Slider
 
 A new Flutter project.
 
