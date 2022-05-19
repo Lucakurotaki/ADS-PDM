@@ -1,5 +1,16 @@
-<h1>PDM 06 Exercícios - desafios</h1>
+<h1>PDM 08 Exercícios - parte 2</h1>
 
-## Link do vídeo:
-<p>https://drive.google.com/file/d/1rQdijuKyqPp8PYKsdwSakcDxv4_XJ4rJ/view?usp=sharing</p>
+## Q01.
+<p>Pasta "Toggle Buttons"</p>
 
+## Q02.
+<p>Pasta "Focus Change"</p>
+
+## Q03.
+<p>Pasta "Checkbox"</p>
+
+## Q04.
+<p>Pasta "Toggle Switch"</p>
+
+## Q05.
+<p>Pasta "Slider"</p>
