@@ -1,4 +1,4 @@
-# quizzler
+# Number Trivia
 
 A new Flutter project.
 
