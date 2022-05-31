@@ -1,4 +1,4 @@
-# number_trivia
+# Ghibli App
 
 A new Flutter project.
 
