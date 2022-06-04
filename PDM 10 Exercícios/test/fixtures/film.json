@@ -1,0 +1,9 @@
+{
+    "id": "fId",
+    "title" : "title",
+    "director" : "director",
+    "image" : "image",
+    "description" : "description",
+    "release_date" : 1,
+    "running_time" : 1
+}

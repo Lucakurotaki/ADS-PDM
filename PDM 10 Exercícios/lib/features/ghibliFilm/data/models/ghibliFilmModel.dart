@@ -26,8 +26,8 @@ class GhibliFilmModel extends GhibliFilm{
       director: json['director'],
       image: json['image'],
       description: json['description'],
-      releaseDate: json['release_date'],
-      runningTime: json['running_time']
+      releaseDate: (json['release_date'] as num).toInt(),
+      runningTime: (json['running_time'] as num).toInt()
     );
   }
 

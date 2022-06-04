@@ -9,7 +9,7 @@ import '../repositories/mock/ghibliFilmRepositoryMock.mocks.dart';
 void main() {
 
   const tId = 'id';
-  const tGhibliFilm = GhibliFilm(fId: '58611129-2dbc-4a81-a72f-77ddfc1b1b49', title: 'My Neigbor Totoro', director: 'Hayao Miyazaki', image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg', description: 'Two sisters move to the country with their father in order to be closer to their hospitalized mother, and discover the surrounding trees are inhabited by Totoros, magical spirits of the forest. When the youngest runs away from home, the older sister seeks help from the spirits to find her', releaseDate: 1988, runningTime: 86);
+  const tGhibliFilm = GhibliFilm(fId: '1', title: 'title', director: 'diretor', image: 'image', description: 'description', releaseDate: 1, runningTime: 1);
   final mockGhibliFilmRepository = MockGhibliFilmRepository();
   final usecase = GetGhibliFilmById(mockGhibliFilmRepository);
 
