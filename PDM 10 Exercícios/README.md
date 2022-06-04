@@ -1,6 +1,6 @@
 # Ghibli App
 
-Aplicação baseado no Number Trvia App. Implementado a partir do exercício 10 da disciplina PDM.
+Aplicação baseada no Number Trvia App. Implementado a partir do exercício 10 da disciplina PDM.
 
 ## Getting Started
 
