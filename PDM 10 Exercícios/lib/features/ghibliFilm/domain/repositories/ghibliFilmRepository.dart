@@ -5,5 +5,5 @@ import '../entities/ghibliFilm.dart';
 
 abstract class GhibliFilmRepository {
   Future<Either<Failure, GhibliFilm>> getGhibliFilmById(String id);
-  Future<Either<Failure, List<GhibliFilm>>> getAllGhibliFilm();
+  Future<Either<Failure, GhibliFilm>> getRandomGhibliFilm(String id);
 }
