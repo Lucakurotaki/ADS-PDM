@@ -1,6 +1,6 @@
 # Ghibli App
 
-A new Flutter project.
+Aplicação baseada no Number Trvia App. Implementado a partir do exercício 10 da disciplina PDM.
 
 ## Getting Started
 
