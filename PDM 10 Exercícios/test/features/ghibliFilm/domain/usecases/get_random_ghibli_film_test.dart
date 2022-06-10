@@ -1,9 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:number_trivia/core/usecases/usecase.dart';
-import 'package:number_trivia/features/ghibliFilm/domain/entities/ghibliFilm.dart';
-import 'package:number_trivia/features/ghibliFilm/domain/usecases/getRandomGhibliFilm.dart';
+import 'package:number_trivia/features/ghibliFilm/domain/entities/ghibli_film.dart';
+import 'package:number_trivia/features/ghibliFilm/domain/usecases/get_random_ghibli_film.dart';
 import 'package:mockito/mockito.dart';
-import '../repositories/mock/ghibliFilmRepositoryMock.mocks.dart';
+import '../../mock/ghibli_film_repository_mock.mocks.dart';
 import 'package:dartz/dartz.dart';
 
 void main(){

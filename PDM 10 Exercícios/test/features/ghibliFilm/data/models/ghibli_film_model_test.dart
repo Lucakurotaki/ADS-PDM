@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:number_trivia/features/ghibliFilm/data/models/ghibliFilmModel.dart';
-import 'package:number_trivia/features/ghibliFilm/domain/entities/ghibliFilm.dart';
+import 'package:number_trivia/features/ghibliFilm/data/models/ghibli_film_model.dart';
+import 'package:number_trivia/features/ghibliFilm/domain/entities/ghibli_film.dart';
 
-import '../../../../fixtures/fixtureReader.dart';
+import '../../../../fixtures/fixture_reader.dart';
 
 void main(){
   const tGhibliFilmModel = GhibliFilmModel(fId: 'fId', title: 'title', director: 'director', image: 'image', description: 'description', releaseDate: 1, runningTime: 1);

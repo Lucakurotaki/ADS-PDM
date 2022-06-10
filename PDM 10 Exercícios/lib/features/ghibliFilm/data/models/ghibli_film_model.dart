@@ -1,4 +1,4 @@
-import 'package:number_trivia/features/ghibliFilm/domain/entities/ghibliFilm.dart';
+import 'package:number_trivia/features/ghibliFilm/domain/entities/ghibli_film.dart';
 
 class GhibliFilmModel extends GhibliFilm{
   const GhibliFilmModel({

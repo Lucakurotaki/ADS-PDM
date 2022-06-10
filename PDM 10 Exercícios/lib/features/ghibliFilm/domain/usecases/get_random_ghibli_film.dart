@@ -2,8 +2,8 @@ import 'package:dartz/dartz.dart';
 import 'package:number_trivia/core/usecases/usecase.dart';
 import 'dart:math';
 import '../../../../core/error/failure.dart';
-import '../entities/ghibliFilm.dart';
-import '../repositories/ghibliFilmRepository.dart';
+import '../entities/ghibli_film.dart';
+import '../repositories/ghibli_film_repository.dart';
 
 class GetRandomGhibliFilm extends UseCase<GhibliFilm, NoParams> {
   final GhibliFilmRepository repository;

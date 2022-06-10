@@ -2,9 +2,9 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:number_trivia/core/usecases/usecase.dart';
 import 'package:mockito/mockito.dart';
-import 'package:number_trivia/features/ghibliFilm/domain/entities/ghibliFilm.dart';
-import 'package:number_trivia/features/ghibliFilm/domain/usecases/getGhibliFilmById.dart';
-import '../repositories/mock/ghibliFilmRepositoryMock.mocks.dart';
+import 'package:number_trivia/features/ghibliFilm/domain/entities/ghibli_film.dart';
+import 'package:number_trivia/features/ghibliFilm/domain/usecases/get_ghibli_film_by_id.dart';
+import '../../mock/ghibli_film_repository_mock.mocks.dart';
 
 void main() {
 
