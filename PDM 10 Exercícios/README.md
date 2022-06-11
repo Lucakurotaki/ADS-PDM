@@ -2,6 +2,9 @@
 
 Aplicação baseada no Number Trvia App. Implementado a partir do exercício 10 da disciplina PDM.
 
+## Vídeos
+ - PDM 12 Exercícios: https://drive.google.com/file/d/16toULMgckzaXlEzQll6P23SZB95TOJCj/view?usp=sharing
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
