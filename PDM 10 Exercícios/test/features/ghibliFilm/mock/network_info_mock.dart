@@ -1,7 +1,7 @@
 import 'package:mockito/annotations.dart';
-import 'package:number_trivia/core/platform/networkInfo.dart';
+import 'package:number_trivia/core/platform/net_work_info.dart';
 
-@GenerateMocks([NetworkInfo])
+@GenerateMocks([], customMocks: [MockSpec<NetworkInfo>(returnNullOnMissingStub: true)])
 void main(){
 
 }

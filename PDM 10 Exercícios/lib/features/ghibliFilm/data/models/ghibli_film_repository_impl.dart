@@ -2,7 +2,8 @@ import 'dart:async';
 
 import 'package:dartz/dartz.dart';
 import 'package:number_trivia/core/error/failure.dart';
-import 'package:number_trivia/core/platform/networkInfo.dart';
+import 'package:number_trivia/core/error/exception.dart';
+import 'package:number_trivia/core/platform/net_work_info.dart';
 import 'package:number_trivia/features/ghibliFilm/data/datasources/ghibli_film_local_data_source.dart';
 import 'package:number_trivia/features/ghibliFilm/data/datasources/ghibli_film_remote_data_source.dart';
 import 'package:number_trivia/features/ghibliFilm/domain/entities/ghibli_film.dart';
@@ -21,16 +22,45 @@ class GhibliFilmRepositoryImpl implements GhibliFilmRepository{
     required this.networkInfo
   }); 
 
-  Completer completer = Completer();
-
 
   @override
-  Future<Either<Failure, GhibliFilm>> getGhibliFilmById(String id) {
-    return completer.future<Either<Failure, GhibliFilm>>;
+  Future<Either<Failure, GhibliFilm>> getGhibliFilmById(String id) async {
+    if (await networkInfo.isConnected){
+      try{
+        final remoteFilm = await remoteDataSource.getGhibliFilmById(id);
+        localDataSource.cacheGhibliFilm(remoteFilm);
+        return Right(remoteFilm);
+      } on ServerException{
+        return Left(ServerFailure());
+      }
+    }else{
+      try{
+        final localFilm = await localDataSource.getLastGhibliFilm();
+        return Right(localFilm);
+      } on CacheException{
+        return Left(CacheFailure());
+      }
+
+    }
   }
 
   @override
-  Future<Either<Failure, GhibliFilm>> getRandomGhibliFilm(String id){
-    return completer.future<Either<Failure, GhibliFilm>>;
+  Future<Either<Failure, GhibliFilm>> getRandomGhibliFilm(String id) async {
+    if(await networkInfo.isConnected){
+      try{
+        final remoteFilm = await remoteDataSource.getRandomGhibliFilm(id);
+        localDataSource.cacheGhibliFilm(remoteFilm);
+        return Right(remoteFilm);
+      } on ServerException{
+        return Left(CacheFailure());
+      }
+    }else{
+      try{
+        final localFilm = await localDataSource.getLastGhibliFilm();
+        return Right(localFilm);
+      } on CacheException{
+        return Left(CacheFailure());
+      }
+    }
   }
 }
