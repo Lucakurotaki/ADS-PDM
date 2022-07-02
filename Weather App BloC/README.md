@@ -1,4 +1,4 @@
-# weatherappbloc
+# Weather App BloC
 
 A new Flutter project.
 
